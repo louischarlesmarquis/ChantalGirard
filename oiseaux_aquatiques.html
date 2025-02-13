@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chantal Girard - Oiseaux aquatiques</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--         
+        changer logo photographe to photographie
+        fix hover bug
+        navigation padding?
+        make biographie pretty
+        find and fix awkward elements
+        mobile
+    -->
+
+    <div class="flex">
+        <!-- NAVIGATION BAR -->
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="index.html"><img src="/photos/logo2.jpeg" class="logo"></a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="biographie.html" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Biographie</span>
+                    </a>
+                </li>
+                
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-camera"></i>
+                        <span>Photos</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Oiseaux aquatiques</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Oiseaux de rivage</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Oiseaux de proie</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Bruants</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Parulines</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Passereaux</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Pics</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Autres oiseaux</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">Animaux</a>
+                        </li>
+                        
+                        <!-- 
+                        pour ajouter une categorie, copie le bloc contenant 3 lignes et change le nom de la categorie
+                        
+                        <li class="sidebar-item"></li>
+                            <a href="#" class="sidebar-link">NOM_DE_LA_CATEGORIE</a>
+                        </li>
+
+                        -->
+
+                    </ul>
+                </li>
+                <li class="sidebar-item"></li>
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-video"></i>
+                        <span>Vidéos</span>
+                    </a>
+                </li>
+                <li class="sidebar-item"></li>
+                    <a href="#contact" class="sidebar-link">
+                        <i class="lni lni-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+        
+
+        <div class="content">
+            <div class="bannière">
+                <p>Toutes les photos ont été inspirées par la beauté de la nature et prises avec passion</p>
+            </div>
+
+            <!-- GALLERIE DE PHOTOS -->
+            <div class="masonry-grid">
+                <div class="grid-item"><img src="/photos/bg.avif"       onclick="openLightbox(0)"></div>
+                <div class="grid-item"><img src="/photos/bird-example.webp" onclick="openLightbox(1)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"           onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <!-- Add more images as needed -->
+            </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-image" src="" alt="">
+                    <div id="description" class="description"></div>
+                    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                    <a class="next" onclick="changeImage(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="contact-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <div>
+            <h2>Contactez-moi!</h2>
+            <p>Il me fera plaisir de vous répondre</p>
+          </div>
+        </div>
+    
+        <a href="mailto:changirard@sympatico.ca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          changirard@sympatico.ca
+        </a>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

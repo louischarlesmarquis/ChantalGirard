@@ -22,6 +22,7 @@ h1 {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(39, 46, 58, 1);
 }
 
 .flex {
@@ -33,7 +34,6 @@ body {
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: #fafbfe;
 }
 
 /* Masonry Grid */
@@ -128,8 +128,6 @@ body {
 }
 
 
-
-
 /* SIDEBAR */
 #sidebar {
     width: 70px;
@@ -169,7 +167,8 @@ body {
 }
 
 .logo{
-    width: 200px;
+    margin-top: 12px;
+    width: 180px;
 }
 
 #sidebar:not(.expand) .sidebar-logo,
@@ -238,4 +237,107 @@ a.sidebar-link:hover {
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
     transform: rotate(45deg);
     transition: all .2s ease-out;
+}
+
+
+/* BIOGRAPHIE */
+.biography-content{
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.biography-profile-img {
+    border-radius: 10px;
+    float: right;
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+.biography-title{
+    margin-bottom: 15px;
+    color: white;
+}
+.biography-text {
+    color: white;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+.biography-footer-img {
+    padding: 30px;
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.bannière{
+    color: #f0f8ff; 
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.bannière p{
+    margin: 0;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.footer .contact-info {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.footer h2 {
+margin: 0;
+font-size: 1.25rem;
+}
+
+.footer p {
+margin: 4px 0 0;
+color: #9ca3af;
+font-size: 0.875rem;
+}
+
+.footer a {
+display: flex;
+align-items: center;
+background-color: #2563eb;
+color: white;
+padding: 10px 16px;
+border-radius: 12px;
+text-decoration: none;
+font-size: 0.9rem;
+transition: background-color 0.3s ease;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer a:hover {
+background-color: #1d4ed8;
+}
+
+.footer a svg {
+margin-right: 8px;
 }

@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <!-- ajouter bannière: toutes les photos ont été inspirées par la beauté de la nature et prises avec passion -->
-    <!-- 
-        biographie
-        replace contact by a footer
+    <!--         
         changer logo photographe to photographie
         fix hover bug
-        remove video page
+        navigation padding?
+        make biographie pretty
+        find and fix awkward elements
+        mobile
     -->
+
     <div class="flex">
         <!-- NAVIGATION BAR -->
         <aside id="sidebar">
@@ -29,12 +30,12 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <a href="#"><img src="logo2.jpeg" class="logo"></a>
+                    <a href="index.html"><img src="/photos/logo2.jpeg" class="logo"></a>
                 </div>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="biographie.html" class="sidebar-link">
                         <i class="lni lni-user"></i>
                         <span>Biographie</span>
                     </a>
@@ -43,30 +44,36 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="lni lni-protection"></i>
+                        <i class="lni lni-camera"></i>
                         <span>Photos</span>
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Oiseaux aquatiques</a>
+                            <a href="oiseaux_aquatiques.html" class="sidebar-link">Oiseaux aquatiques</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Oiseaux de rivage</a>
+                            <a href="oiseaux_de_rivage.html" class="sidebar-link">Oiseaux de rivage</a>
                         </li>
                         <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">Oiseaux de proie</a>
+                            <a href="oiseaux_de_proie.html" class="sidebar-link">Oiseaux de proie</a>
                         </li>
                         <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">Parulines</a>
+                            <a href="bruants.html" class="sidebar-link">Bruants</a>
                         </li>
                         <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">Bruants</a>
+                            <a href="parulines.html" class="sidebar-link">Parulines</a>
                         </li>
                         <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">Oiseaux de petite taille</a>
+                            <a href="passereaux.html" class="sidebar-link">Passereaux</a>
                         </li>
                         <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">Pics et autres formes</a>
+                            <a href="pics.html" class="sidebar-link">Pics</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="autres_oiseaux.html" class="sidebar-link">Autres oiseaux</a>
+                        </li>
+                        <li class="sidebar-item"></li>
+                            <a href="animaux.html" class="sidebar-link">Animaux</a>
                         </li>
                         
                         <!-- 
@@ -81,14 +88,14 @@
                     </ul>
                 </li>
                 <li class="sidebar-item"></li>
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
+                    <a href="vidéos.html" class="sidebar-link">
+                        <i class="lni lni-video"></i>
                         <span>Vidéos</span>
                     </a>
                 </li>
                 <li class="sidebar-item"></li>
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
+                    <a href="#contact" class="sidebar-link">
+                        <i class="lni lni-envelope"></i>
                         <span>Contact</span>
                     </a>
                 </li>
@@ -96,31 +103,58 @@
 
         </aside>
         
-        <!-- GALLERIE DE PHOTOS -->
-        <div class="masonry-grid">
-            <div class="grid-item"><img src="bg.avif"       onclick="openLightbox(0)"></div>
-            <div class="grid-item"><img src="bird-example.webp" onclick="openLightbox(1)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"       onclick="openLightbox(2)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"           onclick="openLightbox(2)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"       onclick="openLightbox(2)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"       onclick="openLightbox(2)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"       onclick="openLightbox(2)"></div>
-            <div class="grid-item"><img src="ex-bird.jpg"       onclick="openLightbox(2)"></div>
-            <!-- Add more images as needed -->
-        </div>
 
-        <!-- Lightbox -->
-        <div id="lightbox" class="lightbox">
-            <span class="close" onclick="closeLightbox()">&times;</span>
-            <div class="lightbox-content">
-                <img id="lightbox-image" src="" alt="">
-                <div id="description" class="description"></div>
-                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-                <a class="next" onclick="changeImage(1)">&#10095;</a>
+        <div class="content">
+            <div class="bannière">
+                <p>Toutes les photos ont été inspirées par la beauté de la nature et prises avec passion</p>
+            </div>
+
+            <!-- GALLERIE DE PHOTOS -->
+            <div class="masonry-grid">
+                <div class="grid-item"><img src="/photos/bg.avif"       onclick="openLightbox(0)"></div>
+                <div class="grid-item"><img src="/photos/bird-example.webp" onclick="openLightbox(1)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"           onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <div class="grid-item"><img src="/photos/ex-bird.jpg"       onclick="openLightbox(2)"></div>
+                <!-- Add more images as needed -->
+            </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-image" src="" alt="">
+                    <div id="description" class="description"></div>
+                    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                    <a class="next" onclick="changeImage(1)">&#10095;</a>
+                </div>
             </div>
         </div>
+        
 
     </div>
+
+    <footer class="footer" id="contact">
+        <div class="contact-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <div>
+            <h2>Contactez-moi!</h2>
+            <p>Il me fera plaisir de vous répondre</p>
+          </div>
+        </div>
+    
+        <a href="mailto:changirard@sympatico.ca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          changirard@sympatico.ca
+        </a>
+    </footer>
 
     
 
