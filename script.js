@@ -10,18 +10,17 @@ hamBurger.addEventListener("click", function () {
 let currentImageIndex = 0;
 const images = [
     {
-        src: 'bg.avif',
+        src: '/photos/bg.avif',
         description: 'This is image 1'
     },
     {
-        src: 'bird-example.webp',
+        src: '/photos/bird-example.webp',
         description: 'This is image 2'
     },
     {
-        src: 'ex-bird.jpg',
+        src: '/photos/ex-bird.jpg',
         description: 'This is image 3'
     }
-    // Add more images and descriptions as needed
 ];
 
 function openLightbox(index) {
