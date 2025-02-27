@@ -5,22 +5,23 @@ hamBurger.addEventListener("click", function () {
   document.querySelector("#sidebar").classList.toggle("expand");
 });
 
-
 //zoom in on images
 let currentImageIndex = 0;
 const images = [
+    [ 
     {
-        src: '/photos/bg.avif',
-        description: 'This is image 1'
+        src: '/photos/Animaux/DSC00070A.JPG',
+        description: 'Grenouille'
     },
     {
-        src: '/photos/bird-example.webp',
-        description: 'This is image 2'
+        src: '/photos/Animaux/DSC03314A.jpg',
+        description: 'Lapin'
     },
     {
-        src: '/photos/ex-bird.jpg',
-        description: 'This is image 3'
+        src: '/photos/Animaux/DSC03489A.JPG',
+        description: 'Couleuvre'
     }
+    ]
 ];
 
 function openLightbox(index) {
@@ -39,19 +40,30 @@ function closeLightbox() {
     lightbox.style.display = 'none';
 }
 
-function changeImage(direction) {
+function changeImage(direction, category) {
     currentImageIndex += direction;
 
     // Wrap around the images if at the start or end
-    if (currentImageIndex < 0) {
-        currentImageIndex = images.length - 1;
-    } else if (currentImageIndex >= images.length) {
-        currentImageIndex = 0;
+    if (currentImageIndex % 1000 > 998  || currentImageIndex < 1000) {
+        if(category==0){
+            currentImageIndex = 8000 + images[8].length - 1;
+        } 
+        else{
+            currentImageIndex = images[category-1].length - 1 - (category+1)*1000;
+        } 
+        
+    } else if (currentImageIndex % 1000 >= images[category].length) {
+        if(category==8){
+            currentImageIndex = 1000;
+        }
+        else{
+            currentImageIndex = (category+1)*1000;
+        }
     }
 
     const lightboxImage = document.getElementById('lightbox-image');
     const description = document.getElementById('description');
 
-    lightboxImage.src = images[currentImageIndex].src;
-    description.textContent = images[currentImageIndex].description;
+    lightboxImage.src = images[category][currentImageIndex].src;
+    description.textContent = images[category][currentImageIndex].description;
 }
