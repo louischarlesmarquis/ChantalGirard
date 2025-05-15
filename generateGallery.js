@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // === CONFIGURATION ===
-const folderPath = './photos/oiseaux_de_proies'; // Adjust this path
-const webPath = 'photos/oiseaux_de_proies';
+const folderPath = './photos/Oiseaux_aquatiques'; // Adjust this path
+const webPath = 'photos/Oiseaux_aquatiques';
 let index = 0;
 
 function sanitizeFileName(fileName, dir) {
