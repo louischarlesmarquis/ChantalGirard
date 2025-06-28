@@ -27,7 +27,7 @@
         <!-- NAVIGATION BAR -->
         <aside id="sidebar">
             <div class="d-flex">
-                <button class="toggle-btn" type="button">
+                <button class="toggle-btn" type="button" onclick="toggleSidebar()">
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
@@ -48,63 +48,51 @@
                         <i class="lni lni-camera"></i>
                         <span>Photos</span>
                     </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <ul class="sidebar-dropdown list-unstyled collapse" id="auth" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="oiseaux_aquatiques.html" class="sidebar-link">Oiseaux aquatiques</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="oiseaux_de_rivage.html" class="sidebar-link">Échassiers</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="oiseaux_de_proie.html" class="sidebar-link">Oiseaux de proie</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="bruants.html" class="sidebar-link">Bruants</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="parulines.html" class="sidebar-link">Parulines</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="passereaux.html" class="sidebar-link">Passereaux</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="pics.html" class="sidebar-link">Pics</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="autres_oiseaux.html" class="sidebar-link">Autres oiseaux</a>
                         </li>
-                        <li class="sidebar-item"></li>
+                        <li class="sidebar-item">
                             <a href="animaux.html" class="sidebar-link">Animaux</a>
                         </li>
-                        
-                        <!-- 
-                        pour ajouter une categorie, copie le bloc contenant 3 lignes et change le nom de la categorie
-                        
-                        <li class="sidebar-item"></li>
-                            <a href="#" class="sidebar-link">NOM_DE_LA_CATEGORIE</a>
-                        </li>
-
-                        -->
-
                     </ul>
                 </li>
-                <li class="sidebar-item"></li>
+                <li class="sidebar-item">
                     <a href="vidéos.html" class="sidebar-link">
                         <i class="lni lni-video"></i>
                         <span>Vidéos</span>
                     </a>
                 </li>
-                <li class="sidebar-item"></li>
+                <li class="sidebar-item">
                     <a href="#contact" class="sidebar-link">
                         <i class="lni lni-envelope"></i>
                         <span>Contact</span>
                     </a>
                 </li>
             </ul>
-
         </aside>
         
-
         <div class="content">
             <div class="bannière">
                 <p>Toutes les photos ont été inspirées par la beauté de la nature et prises avec passion</p>
@@ -142,8 +130,6 @@
                 </div>
             </div>
         </div>
-        
-
     </div>
 
     <footer class="footer" id="contact">
