@@ -57,75 +57,123 @@ body {
     display: block;
 }
 
+/* .grid-item img:hover {
+    transform: scale(1.05);
+} */
+/* Lightbox Styles - Add this to your styles.css file */
 
-/* zoom-in feature */
-/* Lightbox */
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 9999;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
     overflow: hidden;
-    text-align: center;
 }
 
-/* Lightbox content */
 .lightbox-content {
     position: relative;
-    margin: auto;
-    max-width: 90%;
-    max-height: 90%;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/* Lightbox image */
 #lightbox-image {
-    max-width: 100%;
-    max-height: 80vh;
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
-/* Description */
 .description {
-    color: white;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
-/* Close button */
 .close {
     position: absolute;
     top: 20px;
-    right: 35px;
-    color: white;
+    right: 30px;
     font-size: 40px;
-    font-weight: bold;
+    color: white;
     cursor: pointer;
+    user-select: none;
+    z-index: 10000;
+    transition: color 0.3s ease;
 }
 
-/* Navigation arrows */
+.close:hover {
+    color: #ff6b6b;
+}
+
 .prev, .next {
     position: absolute;
     top: 50%;
-    color: white;
+    transform: translateY(-50%);
     font-size: 60px;
+    color: white;
     cursor: pointer;
     user-select: none;
-    transform: translateY(-50%);
+    z-index: 10000;
+    transition: color 0.3s ease;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.prev:hover, .next:hover {
+    color: #4ecdc4;
+    text-decoration: none;
 }
 
 .prev {
-    left: 0;
-    padding-left: 20px;
+    left: 20px;
 }
 
 .next {
-    right: 0;
-    padding-right: 20px;
+    right: 20px;
 }
+
+/* Responsive Design for Lightbox */
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 40px;
+        padding: 15px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    .close {
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    #lightbox-image {
+        max-width: 95%;
+        max-height: 70%;
+    }
+}
+
+
 
 
 /* SIDEBAR */
