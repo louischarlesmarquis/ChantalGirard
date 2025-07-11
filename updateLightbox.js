@@ -8,7 +8,7 @@ const categoryMapping = {
     'bruants.html': 'bruants',
     'oiseaux_aquatiques.html': 'oiseaux_aquatiques',
     'oiseaux_de_proie.html': 'oiseaux_de_proie',
-    'oiseaux_de_rivage.html': 'oiseaux_de_rivage',
+    'echassiers.html': 'echassiers',
     'parulines.html': 'parulines',
     'passereaux.html': 'passereaux',
     'pics.html': 'pics'
