@@ -302,7 +302,7 @@ a.sidebar-link:hover {
 
 /* Keep main Photos link highlighted when hovering dropdown */
 #sidebar:not(.expand) .sidebar-item:hover > a.sidebar-link {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-left: 3px solid #3b7ddd;
 }
 
