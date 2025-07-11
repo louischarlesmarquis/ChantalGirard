@@ -635,145 +635,145 @@ const photoCategories = {
             description: ''
         }
     ],
-    'oiseaux_de_proies': [
+    'oiseaux_de_proie': [
         {
-            src: 'photos/Oiseaux_de_proies/DSC00038A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00038A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00040A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00040A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00044A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00044A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00077A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00077A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00087A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00087A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00129A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00129A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00165B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00165B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00301A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00301A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00402A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00402A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00467A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00467A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00665A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00665A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00778B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00778B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00841A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00841A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00884B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00884B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC00920A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC00920A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC01358A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC01358A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC01484A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC01484A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0236A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0236A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0241A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0241A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0358B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0358B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC03674A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC03674A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC03674B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC03674B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0393A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0393A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0437A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0437A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0451A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0451A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC06159B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC06159B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC06389B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC06389B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC0800A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC0800A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC08680B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC08680B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC08703C.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC08703C.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC09581B.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC09581B.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC1026A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC1026A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC1427A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC1427A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC1565A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC1565A.JPG',
             description: ''
         },
         {
-            src: 'photos/Oiseaux_de_proies/DSC2810A.JPG',
+            src: 'photos/Oiseaux_de_proie/DSC2810A.JPG',
             description: ''
         }
     ],
