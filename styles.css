@@ -8,11 +8,10 @@
 }
 
 :root {
-  --primary-color: black;
+  --primary-color: #272E3A;
   --secondary-color: #4d4d4d	;
   --text-color: white;
 }
-
 
 a {
     text-decoration: none;
@@ -41,6 +40,12 @@ body {
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
+}
+
+.content {
+    flex: 1;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 /* Masonry Grid */
