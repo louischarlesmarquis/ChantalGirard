@@ -14,8 +14,8 @@ def generate_gallery_html(category_folder: Path, category_name: str) -> str:
     # Sort alphabetically
     images.sort(key=lambda x: x.name)
     
-    # Generate HTML
-    html_lines = ['            <div class="masonry-grid">']
+    # Generate HTML with proper indentation
+    html_lines = ['<div class="masonry-grid">']
     
     for index, img_path in enumerate(images):
         # Relative path from HTML root
@@ -27,7 +27,7 @@ def generate_gallery_html(category_folder: Path, category_name: str) -> str:
             f'onclick="openLightbox({index}, \'{category_name}\')"></div>'
         )
     
-    html_lines.append('            </div>')
+    html_lines.append('</div>')
     
     return '\n'.join(html_lines)
 
@@ -38,19 +38,21 @@ def update_html_file(html_file: Path, new_gallery_html: str):
     # Read the current HTML
     content = html_file.read_text(encoding='utf-8')
     
-    # Pattern to match the gallery section
-    # This looks for <!-- GALLERIE DE PHOTOS --> followed by the masonry-grid div
-    pattern = r'(<!-- GALLERIE DE PHOTOS -->)\s*<div class="masonry-grid">.*?</div>'
+    # Match masonry-grid and the stray </div> that comes after it
+    # The pattern looks for:
+    # 1. <div class="masonry-grid">
+    # 2. All content inside (non-greedy)
+    # 3. The closing </div> for masonry-grid
+    # 4. Optional whitespace and ONE more </div> (the stray one)
+    pattern = r'<div class="masonry-grid">.*?</div>\s*</div>'
     
-    # Replacement: keep the comment, replace the gallery
-    replacement = r'\1\n' + new_gallery_html
-    
-    # Replace the gallery section
-    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    # Replace with new gallery
+    new_content = re.sub(pattern, new_gallery_html, content, flags=re.DOTALL)
     
     # Check if replacement happened
     if new_content == content:
-        print(f"Warning: Could not find gallery section in {html_file}")
+        print(f"⚠️  Warning: Could not find gallery section in {html_file}")
+        print("    Make sure the HTML contains: <div class=\"masonry-grid\">")
         return False
     
     # Write back to file
